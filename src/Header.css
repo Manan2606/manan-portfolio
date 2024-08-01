@@ -1,0 +1,77 @@
+/* Header Styles */
+.header {
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text color */
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header stays above other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a shadow for better visibility */
+  transition: background-color 0.3s ease;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Center the content */
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.header-left {
+  flex: 1; /* Takes up available space on the left */
+}
+
+.logo {
+  width: auto; /* Ensures the logo scales appropriately */
+  max-height: 50px; /* Adjust height as needed */
+}
+
+.header-right {
+  flex: 1; /* Takes up available space on the right */
+  text-align: right; /* Aligns navigation items to the right */
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the end (right) of the container */
+}
+
+.nav-links li {
+  margin-left: 1.5rem; /* Adjust spacing between navigation items */
+}
+
+.nav-link {
+  color: #333333; /* Dark text color */
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+  cursor: pointer; /* Change cursor to pointer when hovering over links */
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffd700; /* Gold underline */
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link:hover {
+  color: #ffd700; /* Gold text color on hover */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Expand underline */
+}

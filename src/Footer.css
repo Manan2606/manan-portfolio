@@ -1,0 +1,44 @@
+.footer {
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-section {
+  display: flex;
+  align-items: center;
+  margin: 0 10px; /* Adjust spacing between sections */
+  flex-grow: 1; /* Grow each section to take equal space */
+  color: #333; /* Set text color to dark */
+}
+
+.footer-icon {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.footer-section span {
+  font-size: 14px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.footer-section a {
+  color: #333;
+  margin: 0 5px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #007bff;
+}
+
+.footer-section a:visited {
+  color: #333;
+}
