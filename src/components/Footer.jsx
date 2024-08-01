@@ -1,5 +1,12 @@
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from "react-icons/fa";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+// src/components/Footer.jsx
+import React from "react";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
 import "../Footer.css";
 
 const Footer = () => {

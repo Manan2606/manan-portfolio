@@ -1,7 +1,8 @@
+// src/components/Header.jsx
 import React from "react";
-import "../Header.css"; // Import the CSS file for styling
-import Logo from "../Logo.png"; // Import the logo image
-import { Link } from "react-scroll"; // Import Link from react-scroll
+import "../Header.css";
+import Logo from "../Logo.png";
+import { Link } from "react-scroll";
 
 const Header = () => {
   return (

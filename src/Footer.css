@@ -6,16 +6,16 @@
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 .footer-section {
   display: flex;
   align-items: center;
-  margin: 0 10px; /* Adjust spacing between sections */
-  flex-grow: 1; /* Grow each section to take equal space */
-  color: #333; /* Set text color to dark */
+  margin: 10px 0; /* Adjust spacing between sections */
+  color: #333;
 }
 
 .footer-icon {
@@ -25,7 +25,7 @@
 
 .footer-section span {
   font-size: 14px;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap;
 }
 
 .footer-section a {
@@ -41,4 +41,12 @@
 
 .footer-section a:visited {
   color: #333;
+}
+
+/* Responsive Styles */
+@media (min-width: 769px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }

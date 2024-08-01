@@ -1,6 +1,7 @@
 import React from "react";
 import "../About.css";
 import Image from "../Image.jpeg";
+import DownloadButton from "./DownloadButton"; // Correct the import path
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
             degree at NJIT, following my Bachelor's in Computer Science from
             Changa University.
           </p>
+          <DownloadButton /> {/* Add the DownloadButton component here */}
         </div>
         <div className="about-right">
           <img src={Image} alt="Manan Shah" className="about-photo" />
