@@ -2,6 +2,17 @@
 #skills {
   padding: 2rem 1rem;
   text-align: center;
+  background-color: #f9f9f9;
+}
+
+.skills-category {
+  margin-bottom: 2rem;
+}
+
+.skills-category-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
 }
 
 .skills-list {
@@ -18,8 +29,7 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #f0f0f0;
-  color: #333;
+  color: #fff;
 }
 
 .skill-item:hover {
@@ -37,128 +47,14 @@
   font-weight: 600;
 }
 
-/* Specific Background Colors for Each Skill */
-.skill-item:nth-child(1) {
-  background-color: #e34f26; /* HTML5 */
-  color: #fff;
-}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .skills-category-title {
+    font-size: 1.2rem;
+  }
 
-.skill-item:nth-child(2) {
-  background-color: #1572b6; /* CSS3 */
-  color: #fff;
-}
-
-.skill-item:nth-child(3) {
-  background-color: #563d7c; /* Bootstrap */
-  color: #fff;
-}
-
-.skill-item:nth-child(4) {
-  background-color: #f7df1e; /* JavaScript */
-  color: #000;
-}
-
-.skill-item:nth-child(5) {
-  background-color: #61dafb; /* React.js */
-  color: #000;
-}
-
-.skill-item:nth-child(6) {
-  background-color: #339933; /* Node.js */
-  color: #fff;
-}
-
-.skill-item:nth-child(7) {
-  background-color: #4fc08d; /* Vue.js */
-  color: #fff;
-}
-
-.skill-item:nth-child(8) {
-  background-color: #306998; /* Python */
-  color: #fff;
-}
-
-.skill-item:nth-child(9) {
-  background-color: #ff6f00; /* Machine Learning */
-  color: #fff;
-}
-
-.skill-item:nth-child(10) {
-  background-color: #4479a1; /* MySQL */
-  color: #fff;
-}
-
-.skill-item:nth-child(11) {
-  background-color: #47a248; /* MongoDB */
-  color: #fff;
-}
-
-.skill-item:nth-child(12) {
-  background-color: #673ab7; /* REST APIs */
-  color: #fff;
-}
-
-.skill-item:nth-child(13) {
-  background-color: #ff2d20; /* Laravel */
-  color: #fff;
-}
-
-.skill-item:nth-child(14) {
-  background-color: #4f5b93; /* PHP */
-  color: #fff;
-}
-
-.skill-item:nth-child(15) {
-  background-color: #a8b9cc; /* C */
-  color: #333;
-}
-
-.skill-item:nth-child(16) {
-  background-color: #00599c; /* C++ */
-  color: #fff;
-}
-
-.skill-item:nth-child(17) {
-  background-color: #007396; /* Java */
-  color: #fff;
-}
-
-.skill-item:nth-child(18) {
-  background-color: #3ddc84; /* Android */
-  color: #000;
-}
-
-.skill-item:nth-child(19) {
-  background-color: #0098d0; /* Ajax */
-  color: #fff;
-}
-
-.skill-item:nth-child(20) {
-  background-color: #0769ad; /* jQuery */
-  color: #fff;
-}
-
-.skill-item:nth-child(21) {
-  background-color: #f05032; /* Git */
-  color: #fff;
-}
-
-.skill-item:nth-child(22) {
-  background-color: #ff6c37; /* Postman */
-  color: #fff;
-}
-
-.skill-item:nth-child(23) {
-  background-color: #ff9900; /* AWS */
-  color: #fff;
-}
-
-.skill-item:nth-child(24) {
-  background-color: #21759b; /* WordPress */
-  color: #fff;
-}
-
-.skill-item:nth-child(25) {
-  background-color: #f24e1e; /* Figma */
-  color: #fff;
+  .skill-item {
+    font-size: 0.9rem;
+    padding: 0.8rem 1.2rem;
+  }
 }
